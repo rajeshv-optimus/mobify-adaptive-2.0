@@ -1,0 +1,39 @@
+{>"global/base"/}
+
+{<contentBlock}
+    <div class="bellows">
+        <div class="bellows__item">
+            <div class="bellows__header">
+                Header1111111
+            </div>
+
+            <div class="bellows__content">
+                dfdsfdfdfdf
+            </div>
+        </div>
+
+        <div class="bellows__item">
+            <div class="bellows__header">
+                <h3>Header</h3>
+            </div>
+
+            <div class="bellows__content">
+                <p>Content</p>
+            </div>
+        </div>
+    </div>
+
+{/contentBlock}
+
+{<uiScripts}
+    <script>
+    // Note: Add any JavaScript that should be run on this page into
+    // app/pages/home/ui.js
+    (function(require) {
+        require(["global/ui", "pages/home/ui"], function(globalUI, homeUI) {
+            globalUI();
+            homeUI();
+        });
+    })(Adaptive.AMD.require);
+    </script>
+{/uiScripts}

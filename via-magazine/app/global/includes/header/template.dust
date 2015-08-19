@@ -1,0 +1,31 @@
+{#header}
+    <header class="t-header" role="banner">
+        <div class="c-menu">
+            <span class="c-menu__text">
+                menu
+            </span>
+        </div>
+
+        <a href={logo} class="c-logo"></a>
+
+        <div class="c-header-right-links">
+            <div class="c-aaa-link">
+                <span class="c-aaa-pinny__link-logo"></span>
+            </div>
+
+            <div class="c-search"></div>
+        </div>
+    </header>
+
+    <div class="c-aaa-logo-pinny" hidden>
+        <a class="pinny__close">{@translate key="close"/}</a>
+        <span class="c-aaa-pinny__link-logo"></span>
+        <p class="c-aaa-pinny__text">{@translate key="visitAaa"/}</p>
+        {navLogo|openTag|s}
+            {@translate key="visitAAA" /}
+        {navLogo|closeTag|s}
+        <div class="c-aaa-pinny__stay-via">
+            <a class="c-stay-via__text">{@translate key="stayOnVia"/}</a>
+        </div>
+    </div>
+{/header}

@@ -1,0 +1,16 @@
+{#footer}
+    <footer class="t-footer" role="contentinfo">
+        <!-- move back to top in partial-->
+        <div class="c-back-to-top">
+            {@translate key="backToTop"/}
+        </div>
+
+        <div class="c-footer-links">
+            {footerLinks}
+        </div>
+
+        <div class="c-copyright">
+            {copyrightText}
+        </div>
+    </footer>
+{/footer}

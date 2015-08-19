@@ -1,0 +1,54 @@
+// Footer page
+// ===========
+// Styling for footer page
+
+.t-footer {
+    font-family: $font-family;
+
+    // Back to top button
+    // ------------------
+    .c-back-to-top {
+        background-color: $blue-20;
+        color: $grey-60;
+        font-size: $font-size-large-16;
+        font-weight: bold;
+        height: 50px;
+        margin-top: $unit*4;
+        padding: 8px 0;
+        text-align: center;
+
+        &::after {
+            content: icon-address(up-arrow);
+            font-family: $icon-font;
+            font-size: $font-size-large-19;
+            font-weight: normal;
+            margin-left: 5px;
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    // Footer navigation link
+    // ----------------------
+    .c-footer-links {
+        background: $blue-10;
+        padding: 22px 21px 12px;
+
+        a {
+            color: $grey-60;
+            display: block;
+            font-family: $font-family;
+            font-size: $font-size-large-15;
+            margin-bottom: 24px;
+        }
+    }
+
+    // Copyright
+    // ---------
+    .c-copyright {
+        background: $blue-10;
+        color: $grey-70;
+        font-size: $font-size-small-12;
+        padding: 0 21px 21px;
+    }
+}
